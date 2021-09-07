@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #161515;
+  padding: 0px;
+  margin: 0;
+  color: whitesmoke;
+}
+nav {
+  background-color: hsl(235, 26%, 17%);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arvo", fantasy, Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+nav button {
+  color: antiquewhite;
+  outline: none;
+  background-color: rgb(43, 46, 74);
+  width: 5%;
+  font-size: 1.5rem;
+  border: 2px solid rgb(156, 245, 73);
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+nav button:hover {
+  background-color: black;
+  border: 5px solid rgb(3, 172, 40);
+  cursor: pointer;
+  box-shadow: 6px 4px 8px 0px #000000;
+}
+.hidden-menu {
+  display: none;
+}
+.show-menu{
+  position: absolute;
+  background-color: #20212c;
+  right: 0vw;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  
+}
+.show-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  text-align: left;
+
+}
+.show-menu  li {
+  padding: 1rem;
+  margin: 0.3rem;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.show-menu li:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 1.5rem;
+  }
+  nav button {
+    font-size: 1rem;
+  }
+}
+
