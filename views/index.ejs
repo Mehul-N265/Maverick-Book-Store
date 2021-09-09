@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="/javascripts/index.js" defer></script>
+    <script src="/javascripts/index.js" defer async></script>
   </head>
   <body>
     <nav class="navigation">
@@ -19,8 +19,22 @@
     <div class="hidden-menu">
       <ul>
         <li class="settings-items">Sign out</li>
-        <li class="settings-items">Profile</li>
+        <li class="settings-items">My Profile</li>
       </ul>
     </div>
+    <div class="hidden-menu-bar">
+      <p id="close-nav">&times;</p>
+      <ul>
+        <li class="items">Dashboard</li>
+        <li class="items">Browse Books</li>
+        <li class="items">Your Books</li>
+        <li class="items">Your Orders</li>
+      </ul>
+    </div>
+    <div class="greeting_div">
+      <p id="greet"></p>
+    </div>
+    <!-- This is main content -->
+    
   </body>
 </html>

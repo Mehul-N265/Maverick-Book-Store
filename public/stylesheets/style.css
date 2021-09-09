@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 *,
 *::before,
 *::after {
@@ -38,7 +39,7 @@ nav button:hover {
 .hidden-menu {
   display: none;
 }
-.show-menu{
+.show-menu {
   position: absolute;
   background-color: #20212c;
   right: 0vw;
@@ -47,7 +48,6 @@ nav button:hover {
   font-size: 1.5rem;
   border-radius: 10px;
   display: flex;
-  
 }
 .show-menu ul {
   list-style-type: none;
@@ -56,9 +56,10 @@ nav button:hover {
   align-items: flex-start;
   justify-items: flex-start;
   text-align: left;
-
 }
-.show-menu  li {
+.show-menu li {
+  font-family: "Arvo", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   padding: 1rem;
   margin: 0.3rem;
   text-align: center;
@@ -70,7 +71,62 @@ nav button:hover {
   cursor: pointer;
   border-radius: 5px;
 }
-@media screen and (max-width: 700px) {
+.hidden-menu-bar {
+  width: -100px;
+  display: none;
+}
+.menu-bar {
+  display: flex;
+  position: fixed;
+  background-color: #20212c;
+  margin: 0;
+  padding: 0.5rem;
+  height: 100vh;
+  font-family: "Arvo", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 1.5rem;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.menu-bar ul {
+  list-style: none;
+}
+.menu-bar li {
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.menu-bar li:hover {
+  background-color: #000000;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px 2px #331169;
+}
+#close-nav {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 2rem;
+}
+#close-nav:hover {
+  cursor: pointer;
+}
+.greeting_div {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  background-color: #160852af;
+  border-radius: 5px;
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (max-width: 770px) {
   header {
     font-size: 1.5rem;
   }
@@ -78,4 +134,3 @@ nav button:hover {
     font-size: 1rem;
   }
 }
-
