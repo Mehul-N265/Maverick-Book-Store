@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 *,
 *::before,
 *::after {
@@ -74,33 +75,43 @@ nav button:hover {
 .hidden-menu-bar {
   width: -100px;
   display: none;
+  transition: 0.5s;
 }
 .menu-bar {
+  opacity: 1;
+  z-index: 100;
   display: flex;
   position: fixed;
-  background-color: #20212c;
+  background-color: #10111f;
   margin: 0;
   padding: 0.5rem;
   height: 100vh;
   font-family: "Arvo", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   font-size: 1.5rem;
-  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: 0.5s;
   flex-wrap: wrap;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
+  width:  25vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
 }
 .menu-bar ul {
   list-style: none;
+
 }
 .menu-bar li {
+  
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 5px;
   transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  color: white;
+  
 }
 .menu-bar li:hover {
+  color: white;
   background-color: #000000;
   cursor: pointer;
   box-shadow: 0px 3px 4px 2px #331169;
@@ -120,11 +131,33 @@ nav button:hover {
   background-color: #160852af;
   border-radius: 5px;
   display: flex;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Arvo',"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   justify-content: center;
   align-content: center;
+}
+.quotes{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 50vw;
+  top: 20vh;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+#quotes-text {
+  font-family: 'Dosis';
+  font-size: 2rem;
+}
+#quote-by{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 1.7rem;
+  text-align: right;
 }
 @media screen and (max-width: 770px) {
   header {
@@ -133,4 +166,23 @@ nav button:hover {
   nav button {
     font-size: 1rem;
   }
+  .menu-bar{
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+  }
+}
+::-webkit-scrollbar {
+  background-color: #082458;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(35deg, rgb(25, 160, 184), rgb(185, 13, 157));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(40deg, rgb(43, 49, 43), rgb(63, 59, 50));
+}
+::-webkit-scrollbar-thumb:hover{
+  box-shadow: 10px 6px 16px 16px whitesmoke;
 }
