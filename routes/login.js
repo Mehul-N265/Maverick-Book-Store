@@ -7,4 +7,8 @@ router.get('/',(req,res,next) =>{
 router.get('/register',(req,res,next) =>{
     res.render('register',{ title: 'Maverick Book Store| Register' })
 });
+///posting
+router.post('/',(req,res,next) =>{
+    res.status(201).send(req.body.user)
+})
 module.exports = router;

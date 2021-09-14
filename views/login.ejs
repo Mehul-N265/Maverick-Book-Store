@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %> </title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <link rel="shortcut icon" href="/images/Logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Maverick Book Store</h1>
+    </header>
+
+    <!--main Content-->
+    <form action="/login" method="POST">
+      <label for="email"> Email:</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        required
+        autofocus
+        placeholder="example:contoso@xyz.com..."
+        autocomplete="email"
+      />
+      <label for="passwd"> Password:  </label>
+      <input type="password" name="passwd" id="passwd" required autocomplete="current-password"/>
+      <button type="submit" class="primary-btn">Login</button>
+    </form>
+    <div class="create-acc">
+      <h3>Don't have a account? Create one!</h3>
+      <button type="button" class="secondary-btn">Create Account</button>
+    </div>
+  </body>
 </html>
