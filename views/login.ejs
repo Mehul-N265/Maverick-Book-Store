@@ -18,24 +18,32 @@
     </header>
 
     <!--main Content-->
-    <form action="/login" method="POST">
-      <label for="email"> Email:</label>
-      <input
-        type="text"
-        name="email"
-        id="email"
-        required
-        autofocus
-        placeholder="example:contoso@xyz.com..."
-        autocomplete="email"
-      />
-      <label for="passwd"> Password:  </label>
-      <input type="password" name="passwd" id="passwd" required autocomplete="current-password"/>
-      <button type="submit" class="primary-btn">Login</button>
-    </form>
-    <div class="create-acc">
-      <h3>Don't have a account? Create one!</h3>
-      <button type="button" class="secondary-btn">Create Account</button>
+    <div class="holder">
+      <form action="/login" method="POST">
+        <label for="email"> Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          required
+          autofocus
+          placeholder="example:contoso@xyz.com..."
+          autocomplete="email"
+        />
+        <label for="passwd"> Password: </label>
+        <input
+          type="password"
+          name="passwd"
+          id="passwd"
+          required
+          autocomplete="current-password"
+        />
+        <center><button type="submit" class="btn primary-btn">Login</button></center>
+      </form>
+      <div class="create-acc">
+        <h3>Don't have a account? Create one!</h3>
+        <center><button type="button" class="btn secondary-btn">Create Account</button></center>
+      </div>
     </div>
   </body>
 </html>
