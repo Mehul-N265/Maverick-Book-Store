@@ -172,17 +172,4 @@ nav button:hover {
     align-content: center;
   }
 }
-::-webkit-scrollbar {
-  background-color: #082458;
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(35deg, rgb(25, 160, 184), rgb(185, 13, 157));
-  border-radius: 5px;
-}
-::-webkit-scrollbar-track {
-  background: linear-gradient(40deg, rgb(43, 49, 43), rgb(63, 59, 50));
-}
-::-webkit-scrollbar-thumb:hover{
-  box-shadow: 10px 6px 16px 16px whitesmoke;
-}
+
